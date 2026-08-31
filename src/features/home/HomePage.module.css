@@ -1,0 +1,97 @@
+.root {
+  position: relative;
+  height: 100vh;
+}
+
+.ul {
+  position: absolute;
+  left: 50%;
+  bottom: 7%;
+  text-align: left;
+  text-transform: uppercase;
+  line-height: 0.9;
+  color: #fff;
+  font-size: 10rem;
+}
+
+li {
+  font-weight: 900;
+}
+
+.sidebar {
+  position: fixed;
+  height: 100%;
+  width: 30%;
+}
+
+.notMobileUl {
+  transform: scale(1.5, 1.1);
+}
+
+li:first-child {
+  padding-left: 3px;
+}
+
+.page {
+  width: 70%;
+  float: right;
+}
+
+.loading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-size: 3em;
+}
+
+@media only screen and (max-width: 1000px) {
+  .ul {
+    font-size: 8rem;
+  }
+
+  .pageLi {
+    font-size: 6rem;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .ul {
+    font-size: 6rem;
+    text-align: center;
+    bottom: 13%;
+  }
+}
+
+@media only screen and (max-width: 635px) {
+  .ul {
+    font-size: 5.5rem;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .name {
+    font-family: "Dorsa", sans-serif;
+    font-size: 2.75rem;
+    transform: scaleX(1.3);
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 4rem;
+  }
+
+  .page {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 360px) {
+  .name {
+    font-size: 2.5rem;
+    padding-top: 5rem;
+  }
+
+  .ul {
+    font-size: 5rem;
+  }
+}

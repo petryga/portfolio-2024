@@ -1,0 +1,131 @@
+.root {
+  opacity: 0;
+}
+
+.project {
+  display: flex;
+  margin-bottom: 0.5rem;
+  justify-content: space-evenly;
+}
+
+.project:hover > .info div:first-child {
+  transition: 0.3s all ease-in-out;
+  font-weight: 700;
+}
+
+.mobileInfo {
+  display: none;
+}
+
+.info {
+  z-index: 999;
+  font-size: 1.25rem;
+  margin: auto 0;
+  text-align: left;
+  text-transform: uppercase;
+  font-weight: 500;
+  width: 13rem;
+  color: #fff;
+}
+
+.info div:first-child {
+  font-size: 1.5rem;
+  transition: 0.3s all ease-in-out;
+}
+
+.info div:last-child {
+  font-weight: 300;
+  font-size: 1rem;
+}
+
+.info div {
+  margin-bottom: 0.5rem;
+}
+
+.date {
+  text-transform: lowercase;
+}
+
+.project a {
+  display: inherit;
+}
+
+.image {
+  height: calc(50vh - 0.5rem);
+  filter: grayscale(100%) sepia(20%) brightness(80%);
+  transition: all 0.5s;
+  margin-left: 5rem;
+}
+
+.image:hover {
+  filter: none;
+  transition: all 0.5s;
+}
+
+@media only screen and (max-width: 1300px) {
+  .info {
+    font-size: 1rem;
+  }
+
+  .info div:first-child {
+    font-size: 1.2rem;
+  }
+
+  .info div:last-child {
+    font-weight: 300;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .info {
+    font-size: 1.3rem;
+  }
+
+  .info div:first-child {
+    font-size: 1.5rem;
+  }
+
+  .image {
+    height: 30vh;
+    margin-left: 3rem;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .info {
+    font-size: 0.9rem;
+    width: 10rem;
+  }
+
+  .info div:first-child {
+    font-size: 1.2rem;
+  }
+
+  .info div:last-child {
+    font-weight: 300;
+    font-size: 0.9rem;
+  }
+
+  .project {
+    justify-content: flex-end;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .root {
+    text-align: center;
+  }
+
+  .project {
+    display: inline-block;
+    position: relative;
+  }
+
+  .image {
+    margin-left: 0rem;
+  }
+
+  .info {
+    display: none;
+  }
+}

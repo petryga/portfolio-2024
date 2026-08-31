@@ -1,0 +1,11 @@
+{
+  "compilerOptions": {
+    "paths": {
+      "utils/*": ["utils/*"],
+      "app/*": ["app/*"],
+      "features/*": ["features/*"],
+      "components/*": ["components/*"],
+      "assets/*": ["assets/*"]
+    }
+  }
+}
